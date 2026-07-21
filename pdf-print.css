@@ -1,0 +1,24 @@
+@media print{
+  @page{size:A5 portrait;margin:8mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;font-size:11px}
+  body:before,.day-nav{display:none!important}
+  .hero{min-height:auto;border-radius:22px;padding:12mm 8mm;margin-bottom:5mm}
+  .hero-kitty{width:28mm;height:28mm}
+  main{width:100%;padding:0}
+  .rules{margin-top:-9mm}
+  .baba-note{margin:4mm 0;padding:3mm}
+  .day{display:block!important;break-before:page;margin-top:0}
+  .day-title{margin-bottom:3mm}
+  .exercise-list{display:block}
+  .exercise{break-inside:avoid;margin-bottom:4mm;box-shadow:none;border-width:1px;padding:2mm}
+  .exercise .demo{height:auto;max-height:78mm;aspect-ratio:auto;object-fit:contain}
+  .exercise-head{padding:2mm 1mm}
+  .sets{gap:2mm}
+  .set+label{min-height:10mm}
+  .set+label+span{display:none!important}
+  .kitty-proud{break-inside:avoid;margin-top:4mm}
+  .kitty-proud a{display:none}
+  .walk{break-before:page;break-inside:avoid;margin-top:0}
+  footer{break-inside:avoid;padding:5mm}
+}

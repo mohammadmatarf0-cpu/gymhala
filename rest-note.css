@@ -1,0 +1,60 @@
+.walk {
+  align-items: flex-start;
+}
+
+.walk-copy {
+  display: grid;
+  flex: 1;
+  gap: 8px;
+}
+
+.walk-copy > strong,
+.walk-copy > span,
+.walk-copy > b {
+  padding-inline: 14px;
+}
+
+.walk-copy > strong {
+  margin-top: 8px;
+  padding-top: 14px;
+  color: var(--deep);
+  background: #fff9fc;
+  border: 1px dashed #f75f98;
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+  font-size: 1rem;
+}
+
+.walk-copy > span {
+  display: block;
+  color: #674255;
+  background: #fff9fc;
+  font-size: .88rem;
+  line-height: 1.8;
+}
+
+.walk-copy > b {
+  padding-bottom: 14px;
+  color: #c32f64;
+  background: #fff9fc;
+  border: 1px dashed #f75f98;
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 430px) {
+  .walk {
+    display: block;
+  }
+
+  .walk img {
+    width: 110px;
+    margin: 0 auto 12px;
+  }
+
+  .walk-copy > p,
+  .walk-copy > h2 {
+    text-align: center;
+  }
+}
